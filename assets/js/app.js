@@ -9,7 +9,7 @@ let winningMessage = '';
 const gameArea = document.createElement('div');
 gameArea.id = 'game-area';
 	const headerOne = document.createElement('h1');
-	headerOne.innerText = 'Javascript AI Rock Paper Scissors';
+	headerOne.innerText = 'AI Scissor Paper Stone JS';
 	gameArea.append(headerOne);
 
 	const scoreBoard = document.createElement('div');
