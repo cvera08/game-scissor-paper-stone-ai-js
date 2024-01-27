@@ -1,85 +1,91 @@
 body {
-	font-family: sans-serif;
-	margin: 0;
-	background: #1f3756;
-	color: #fff;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    font-family: sans-serif;
+    margin: 0;
+    background: #1f3756;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-#game-area{
-	position: fixed;
-	width: 600px;
-	height: calc(100vh - 2px);
-	left: calc(50vw - 301px);
-	text-align: center;
-	border: 1px solid;
+#game-area {
+    position: fixed;
+    width: 100%; /* Updated width for full width */
+    height: 100vh;
+    left: 0; /* Centering is handled by text-align: center in parent */
+    text-align: center;
+    border: 1px solid;
 }
 
-#score-board p{
-	display: inline-block;
-	padding: 10px;
-	width: calc(50% - 55px);
-	border: 1px solid;
-	font-size: 21px;
+#score-board p {
+    display: inline-block;
+    padding: 10px;
+    width: 100%; /* Updated width for full width */
+    border: 1px solid;
+    font-size: 21px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
-.score{
-	display:block;
-	font-size: 40px;
-	margin-top: 10px;
+.score {
+    display: block;
+    font-size: 40px;
+    margin-top: 10px;
 }
 
-.btn-area{
-	padding: 15px;
-	margin: 7px 0;
-	border-bottom: 3px solid;
+.btn-area {
+    padding: 15px;
+    margin: 7px 0;
+    border-bottom: 3px solid;
+    box-sizing: border-box; /* Include padding and border in the box model */
 }
 
-.btn-header{
-	display: block;
-	font-size: 28px;
-	margin-bottom: 10px;
+.btn-header {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.btn, .btn-active, .btn-win, .btn-lose{
-	font-size: 100px;
-	background: transparent;
-	color: #fff;
-	padding: 25px 40px;
-	margin: 5px;
-	border: 2px solid;
-	border-radius: 100%;
-	cursor: pointer;
-	transition:.7s;
+.btn,
+.btn-active,
+.btn-win,
+.btn-lose {
+    font-size: 8vw; /* Responsive font size based on viewport width */
+    background: transparent;
+    color: #fff;
+    padding: 5vw 8vw; /* Responsive padding based on viewport width */
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
-.btn:hover, .btn-active{
-	background: orange;
+.btn:hover,
+.btn-active {
+    background: orange;
 }
 
-.btn-win{
-	background: green;
+.btn-win {
+    background: green;
 }
 
-.btn-lose{
-	background: red;
+.btn-lose {
+    background: red;
 }
 
-#ai-btn-area .btn{
-	cursor: default;
+#ai-btn-area .btn {
+    cursor: default;
 }
 
-#ai-btn-area .btn:hover{
-	background: transparent;
+#ai-btn-area .btn:hover {
+    background: transparent;
 }
 
-#notification{
-	position: relative;
-	top: 69px;
-	font-size: 32px;
+#notification {
+    position: relative;
+    top: 5vw; /* Responsive top position based on viewport width */
+    font-size: 4vw; /* Responsive font size based on viewport width */
 }
 
 /* fonts */
