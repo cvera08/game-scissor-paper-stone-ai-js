@@ -11,20 +11,21 @@ body {
 
 #game-area {
     position: fixed;
-    width: 100%; /* Updated width for full width */
+    width: 100%;
     height: 100vh;
-    left: 0; /* Centering is handled by text-align: center in parent */
+    left: 0;
     text-align: center;
     border: 1px solid;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 #score-board p {
     display: inline-block;
     padding: 10px;
-    width: 100%; /* Updated width for full width */
+    width: 100%;
     border: 1px solid;
     font-size: 21px;
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    box-sizing: border-box;
 }
 
 .score {
@@ -37,7 +38,7 @@ body {
     padding: 15px;
     margin: 7px 0;
     border-bottom: 3px solid;
-    box-sizing: border-box; /* Include padding and border in the box model */
+    box-sizing: border-box;
 }
 
 .btn-header {
@@ -50,10 +51,10 @@ body {
 .btn-active,
 .btn-win,
 .btn-lose {
-    font-size: 8vw; /* Responsive font size based on viewport width */
+    font-size: 8vw;
     background: transparent;
     color: #fff;
-    padding: 5vw 8vw; /* Responsive padding based on viewport width */
+    padding: 5vw 8vw;
     margin: 5px;
     border: 2px solid;
     border-radius: 50%;
@@ -84,9 +85,10 @@ body {
 
 #notification {
     position: relative;
-    top: 5vw; /* Responsive top position based on viewport width */
-    font-size: 4vw; /* Responsive font size based on viewport width */
+    top: 5vw;
+    font-size: 4vw;
 }
+
 
 /* fonts */
 @font-face {
