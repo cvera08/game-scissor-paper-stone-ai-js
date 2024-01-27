@@ -10,13 +10,11 @@ body {
 }
 
 #game-area {
-    position: fixed;
-    width: 100%;
-    min-height: 100vh; /* Ensure at least 100% viewport height */
-    left: 0;
+    margin: 0 auto; /* Center the content horizontally */
     text-align: center;
     border: 1px solid;
     overflow-y: auto; /* Enable vertical scrolling */
+    max-width: 600px; /* Set a maximum width for better readability */
     padding-bottom: 50px; /* Add some padding at the bottom */
     box-sizing: border-box;
 }
