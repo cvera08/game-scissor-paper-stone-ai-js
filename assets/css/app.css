@@ -16,8 +16,9 @@ body {
 	left: calc(50vw - 301px);
 	text-align: center;
 	border: 1px solid;
+	overflow-y: auto; /* Enable vertical scrolling on smaller screens */
 }
-
+	
 #score-board p{
 	display: inline-block;
 	padding: 10px;
@@ -80,6 +81,45 @@ body {
 	position: relative;
 	top: 69px;
 	font-size: 32px;
+}
+
+/* Responsive styles for smaller screens (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    #game-area {
+		margin: 0 auto; /* Center the content horizontally */
+		max-width: 600px; /* Set a maximum width for better readability */
+		padding-bottom: 50px; /* Add some padding at the bottom */
+		box-sizing: border-box;
+	}
+
+	#score-board p {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.btn-area {
+		box-sizing: border-box;
+	}
+
+	.btn,
+	.btn-active,
+	.btn-win,
+	.btn-lose {
+		font-size: 8vw;
+		padding: 5vw 8vw;
+		border-radius: 50%;
+	}
+
+	#notification {
+		top: 5vw;
+		font-size: 4vw;
+	}
+
+	h1 {
+		max-width: 50%; /* Set a maximum width to avoid stretching too wide */
+		margin: 0 auto; /* Center the element */
+		padding-top: 30px;
+	}
 }
 
 /* fonts */
