@@ -7,7 +7,6 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	overflow-y: auto; /* Enable vertical scrolling on smaller screens */
 }
 
 #game-area{
@@ -17,6 +16,7 @@ body {
 	left: calc(50vw - 301px);
 	text-align: center;
 	border: 1px solid;
+	overflow-y: auto; /* Enable vertical scrolling on smaller screens */
 }
 	
 #score-board p{
@@ -87,7 +87,6 @@ body {
 @media only screen and (max-width: 600px) {
     #game-area {
 		margin: 0 auto; /* Center the content horizontally */
-		overflow-y: auto; /* Enable vertical scrolling */
 		max-width: 600px; /* Set a maximum width for better readability */
 		padding-bottom: 50px; /* Add some padding at the bottom */
 		box-sizing: border-box;
@@ -114,6 +113,12 @@ body {
 	#notification {
 		top: 5vw;
 		font-size: 4vw;
+	}
+
+	h1 {
+		max-width: 50%; /* Set a maximum width to avoid stretching too wide */
+		margin: 0 auto; /* Center the element */
+    	padding-top: 30px;
 	}
 }
 
