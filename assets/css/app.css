@@ -7,6 +7,7 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	overflow-y: auto; /* Enable vertical scrolling on smaller screens */
 }
 
 #game-area{
@@ -16,18 +17,7 @@ body {
 	left: calc(50vw - 301px);
 	text-align: center;
 	border: 1px solid;
-	overflow-y: auto; /* Enable vertical scrolling on smaller screens */
 }
-
-/* Responsive styles for smaller screens (max-width: 600px) 
-@media only screen and (max-width: 600px) {
-    #game-area {
-        position: relative;
-        width: auto;
-        height: auto;
-        left: auto;
-    }
-} */
 	
 #score-board p{
 	display: inline-block;
@@ -97,8 +87,6 @@ body {
 @media only screen and (max-width: 600px) {
     #game-area {
 		margin: 0 auto; /* Center the content horizontally */
-		text-align: center;
-		border: 1px solid;
 		overflow-y: auto; /* Enable vertical scrolling */
 		max-width: 600px; /* Set a maximum width for better readability */
 		padding-bottom: 50px; /* Add some padding at the bottom */
@@ -106,18 +94,11 @@ body {
 	}
 
 	#score-board p {
-		display: inline-block;
-		padding: 10px;
 		width: 100%;
-		border: 1px solid;
-		font-size: 21px;
 		box-sizing: border-box;
 	}
 
 	.btn-area {
-		padding: 15px;
-		margin: 7px 0;
-		border-bottom: 3px solid;
 		box-sizing: border-box;
 	}
 
@@ -126,18 +107,11 @@ body {
 	.btn-win,
 	.btn-lose {
 		font-size: 8vw;
-		background: transparent;
-		color: #fff;
 		padding: 5vw 8vw;
-		margin: 5px;
-		border: 2px solid;
 		border-radius: 50%;
-		cursor: pointer;
-		transition: 0.7s;
 	}
 
 	#notification {
-		position: relative;
 		top: 5vw;
 		font-size: 4vw;
 	}
